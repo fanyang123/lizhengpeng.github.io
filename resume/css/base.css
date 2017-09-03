@@ -1,0 +1,56 @@
+body, section {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", Helvetica, "Helvetica Neue";
+}
+
+/*声明字体*/
+@font-face {
+    font-family: 'zero';
+    src: url('../libs/fonts/zero.ttf?143esg') format('truetype'),
+    url('../libs/fonts/zero.woff?143esg') format('woff'),
+    url('../libs/fonts/zero.svg?143esg#zero') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'zero' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #14191e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f05a76;
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    height: 0;
+    border-left: none;
+    border-right: 0;
+    border-top: 1px dashed #2d2f34;
+    border-bottom: 1px dashed #474954;
+}

@@ -1,0 +1,768 @@
+/*header部分开始*/
+
+.header__wrap {
+    display: none;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    border-bottom: 1px solid #222222;
+    background-color: #000;
+}
+
+.header__logo {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #07111b;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 20px;
+}
+
+.header__logo span {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    text-align: center;
+    color: #fff;
+}
+
+.header__logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.menu {
+    position: absolute;
+    right: 20px;
+    height: 60px;
+    line-height: 60px;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    height: 60px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.menu a:hover {
+    color: #f05a76;
+}
+
+.menu .active a {
+    color: #f05a76;
+}
+
+.menu .active a::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+}
+
+/*header部分结束*/
+
+/*内容部分开始*/
+
+/*screen1开始*/
+.section1 {
+    background: url(../images/home.jpg);
+}
+
+.section1 span {
+    width: 100px;
+    height: 100px;
+    background: url(../images/arrows.png) no-repeat;
+    display: block;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 100px;
+    opacity: 0;
+    animation: change 1.5s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+/*screen1结束*/
+
+/*screen2开始*/
+
+.section2 p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 115px;
+    height: 25px;
+    color: #9a9c8e;
+    line-height: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 330px;
+    left: 900px;
+    opacity: 0;
+}
+
+.section2.active p:nth-child(1),
+.section2.active p:nth-child(4) {
+    animation: fudong 5s 2s ease-in-out infinite;
+}
+
+.section2.active p:nth-child(2),
+.section2.active p:nth-child(3) {
+    animation: fudong 5s 2.5s ease-in-out infinite;
+}
+
+@keyframes fudong {
+    25% {
+        transform: translate3d(10%, -25%, 0);
+    }
+
+    50% {
+        transform: translate3d(20%, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10%, -10%, 0);
+    }
+}
+
+.section2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 260px;
+    border: 5px solid #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+}
+
+.section2 h1 {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    left: 120%;
+    margin-left: -45px;
+    margin-top: 450px;
+}
+
+.section2 h2 {
+    position: absolute;
+    font-weight: normal;
+    font-size: 40px;
+    color: #ffffff;
+    left: -120%;
+    margin-left: -485px;
+    margin-top: 510px;
+}
+
+.section2 h2 > span {
+    color: #f05a76;
+    font-weight: normal;
+}
+
+/*screen2结束*/
+
+/*screen3开始*/
+.section3 h2 {
+    position: absolute;
+    font-size: 60px;
+    color: #ffffff;
+    left: 50%;
+    margin-left: -159px;
+    margin-top: 140px;
+    top: -30%;
+    opacity: 0;
+}
+
+.section3 .container ul {
+    width: 80%;
+    padding: 60px 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -40%;
+}
+
+.section3 .container ul li {
+    width: 300px;
+    height: 500px;
+    margin-right: 7px;
+    float: left;
+    perspective: 600px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -ms-perspective: 600px;
+    cursor: pointer;
+}
+
+.section3 .container ul li:last-child {
+    margin-right: 0;
+}
+
+.section3 .container ul li > div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    transition: 0.8s ease-in-out;
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -ms-transition: 0.8s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.section3 .container ul li .sk__css {
+    background: url(../images/css3.png) no-repeat;
+}
+
+.section3 .container ul li .sk__js {
+    background: url(../images/js.png) no-repeat;
+}
+
+.section3 .container ul li .sk__jq {
+    background: url(../images/jquery.png) no-repeat;
+}
+
+.section3 .container ul li .sk__bt {
+    background: url(../images/bootstrap.png) no-repeat;
+}
+
+.section3 .container ul li .sk__vue {
+    background: url(../images/vue.png) no-repeat;
+}
+
+.section3 .container ul li div:first-child {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.section3 .container ul li:hover div:first-child {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+.section3 .container ul li div:last-child {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    z-index: 1;
+    background-color: #000000;
+}
+
+.section3 .container ul li:hover div:last-child {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 1;
+}
+
+.section3 .container ul li div h3 {
+    margin: 0 auto 15px;
+    padding: 15px 0;
+    width: 200px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px #fff dashed;
+}
+
+.section3 .container ul li div p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*screen3结束*/
+
+/*screen4开始*/
+.section4 {
+    position: relative;
+    padding: 90px 0;
+    min-height: 720px;
+    background: url("../images/log/content-bg.png");
+}
+
+.section4 .timeline {
+    position: relative;
+    background: url("../images/log/release-bg.png") no-repeat right top;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section4 .light {
+    position: absolute;
+    left: 55px;
+    top: -50px;
+    width: 152px;
+    height: 191px;
+    background: url("../images/log/light-top.png") no-repeat top center;
+}
+
+.section4 .light i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/log/light.png") no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.section4 .line__left {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 4%;
+}
+
+.section4 .line__right {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 65%;
+}
+
+.section4 .tl__main {
+    background: url("../images/log/line-bg.png") repeat-y 249px 0;
+}
+
+.section4 .tl__main .title {
+    position: absolute;
+    line-height: 40px;
+    padding-left: 67px;
+    left: 230px;
+    top: 3px;
+    color: #58a6fb;
+    font-size: 30px;
+    background: url("../images/log/clock.png") no-repeat left top;
+}
+
+.section4 .tl__main .year {
+    position: relative;
+    z-index: 100;
+}
+
+.section4 .tl__main .year h2 {
+    height: 40px;
+    width: 170px;
+    padding: 20px 0 0 10px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.section4 .tl__main .year h2 a {
+    color: #58a6fb;
+}
+
+.section4 .tl__main .year h2 i {
+    display: block;
+    position: relative;
+    height: 0;
+    width: 0;
+    left: 185px;
+    top: -20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #59a7fb transparent transparent transparent;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-transform-origin: 6px 3px;
+    -moz-transform-origin: 6px 3px;
+    -ms-transform-origin: 6px 3px;
+    -o-transform-origin: 6px 3px;
+    transform-origin: 6px 3px
+}
+
+.section4 .tl__main .year .t__list {
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -moz-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -ms-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    -o-transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s;
+    transition: height 1s cubic-bezier(0.025, 0.025, 0.000, 1.115), opacity 1s
+}
+
+.section4 .tl__main .year .t__list ul {
+    bottom: 0;
+}
+
+.section4 .tl__main .year .t__list ul li {
+    background: url("../images/log/circle.png") no-repeat 195px 20px;
+    color: #a1a4b8;
+}
+
+.section4 .tl__main .year .t__list ul li.highlight {
+    background-image: url("../images/log/circle-h.png");
+}
+
+.cls {
+    zoom: 1;
+}
+
+.cls:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.section4 .tl__main .year .t__list ul li.highlight .date,
+.section4 .tl__main .year .t__list ul li.highlight .intro {
+    color: #ec6a13;
+}
+
+.section4 .tl__main .year .t__list ul li .date,
+.section4 .tl__main .year .t__list ul li .version {
+    float: left;
+    display: block;
+    clear: left;
+    width: 170px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.section4 .tl__main .year .t__list ul li .date {
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 5px;
+}
+
+.section4 .tl__main .year .t__list ul li .intro,
+.section4 .tl__main .year .t__list ul li .more {
+    float: left;
+    display: block;
+    width: 400px;
+    margin-left: 100px;
+    line-height: 24px;
+}
+
+.section4 .tl__main .year .t__list ul li .more {
+    width: 700px;
+    font-size: 18px;
+    text-align: left;
+    line-height: .5;
+}
+
+.section4 .tl__main .year .t__list ul li .intro {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.section4 .timeline:first-child .tl__main .year.close h2 i {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg)
+}
+
+.section4 .timeline:first-child .tl__main .year.close .t__list {
+    opacity: 0;
+    height: 0 !important;
+}
+
+/*screen4结束*/
+
+/*screen5开始*/
+.section5 h2 {
+    position: absolute;
+    font-size: 60px;
+    color: #ffffff;
+    margin-left: -176px;
+    margin-top: 140px;
+    left: -120%;
+    opacity: 0;
+}
+
+.section5 .container {
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    margin-top: -255px;
+}
+
+.section5 .works {
+    float: left;
+    width: 16.666%;
+    height: 510px;
+}
+
+.section5 .works1 {
+    background: url(../images/works1.png) no-repeat;
+}
+
+.section5 .works2 {
+    background: url(../images/works2.png) no-repeat;
+}
+
+.section5 .works3 {
+    background: url(../images/works3.png) no-repeat;
+}
+
+.section5 .wk__description {
+    float: left;
+    width: 16.666%;
+    height: 510px;
+    background-color: #efefef;
+    color: #434343;
+}
+
+.section5 .wk__description::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #efefef;
+    position: absolute;
+    top: 50%;
+    margin: -15px -30px;
+}
+
+.section5 .wk__description h3 {
+    position: absolute;
+    font-size: 30px;
+    left: 24%;
+    top: 70px;
+}
+
+.section5 .wk__description > p {
+    position: absolute;
+    width: 855px;
+    top: 150px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.section5 .wk__features {
+    position: relative;
+    top: 215px;
+}
+
+.section5 .wk__feature {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777777;
+}
+
+.section5 .wk__feature span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 0 50px;
+    color: green;
+}
+
+.section5 .wk__feature > p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid #777777;
+}
+
+.section5 .wk__description .wk__more {
+    position: absolute;
+    top: 320px;
+}
+
+.section5 .wk__description .wk__more a {
+    color: #bfbfbf;
+}
+
+/*screen5结束*/
+
+/*screen6开始*/
+.section6 {
+    position: relative;
+    padding: 90px 0;
+}
+
+.section6 .contact {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section6 .contact .line__left {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 35%;
+}
+
+.section6 .contact .line__right {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    width: 35%;
+}
+
+.section6 h2 {
+    position: absolute;
+    font-size: 60px;
+    color: #ffffff;
+    left: 50%;
+    margin-left: -207px;
+    margin-top: 120px;
+}
+
+.section6 h2::after {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    right: 50%;
+    margin-right: -5px;
+    bottom: -20px;
+}
+
+.section6 .contact .tips {
+    position: absolute;
+    font-size: 24px;
+    color: #ffffff;
+    left: 50%;
+    margin-left: -372px;
+    margin-top: 300px;
+}
+
+.section6 .contact .con__way {
+    position: absolute;
+    width: 264px;
+    color: #ebebeb;
+    font-size: 20px;
+    left: 50%;
+    margin-left: -132px;
+    top: 370px;
+}
+
+.section6 .contact .con__way span {
+    margin: 0 5px;
+}
+
+.icon-mobile:before {
+    content: "\e958";
+}
+
+.icon-wechat:before {
+    content: "\e900";
+}
+
+.icon-github:before {
+    content: "\eab0";
+}
+
+/*音乐播放器*/
+#audioBox {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    background: url(../images/music.png) no-repeat center;
+    border-radius: 22px;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*screen6结束*/
+
+/*内容部分结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

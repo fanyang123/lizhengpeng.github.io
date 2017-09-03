@@ -1,0 +1,293 @@
+/*第二屏动画start*/
+/*第二屏增加飘浮的效果*/
+.section2.active p:nth-child(1),
+.section2.active p:nth-child(4) {
+    animation: fudong 5s 2s ease-in-out infinite;
+}
+
+.section2.active p:nth-child(2),
+.section2.active p:nth-child(3) {
+    animation: fudong 5s 2.5s ease-in-out infinite;
+}
+
+@keyframes fudong {
+    25% {
+        transform: translate3d(10%, -25%, 0);
+    }
+
+    50% {
+        transform: translate3d(20%, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10%, -10%, 0);
+    }
+}
+
+/*第二屏动画end*/
+
+/*!*第二屏动画start*!*/
+/*.screen-2__circle1 {*/
+    /*transition: all .5s;*/
+/*}*/
+
+/*.screen-2__circle1_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -100%);*/
+/*}*/
+
+/*.screen-2__circle1_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-2__circle2 {*/
+    /*transition: all .5s .5s;*/
+/*}*/
+
+/*.screen-2__circle2_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -100%);*/
+/*}*/
+
+/*.screen-2__circle2_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-2__circle3 {*/
+    /*transition: all .5s 1s;*/
+/*}*/
+
+/*.screen-2__circle3_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -100%);*/
+/*}*/
+
+/*.screen-2__circle3_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-2__circle4 {*/
+    /*transition: all .5s 1.5s;*/
+/*}*/
+
+/*.screen-2__circle4_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -100%);*/
+/*}*/
+
+/*.screen-2__circle4_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-2__describe {*/
+    /*transition: all 1s 2s;*/
+/*}*/
+
+/*.screen-2__describe_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(30%, 30%);*/
+/*}*/
+
+/*.screen-2__describe_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-2__circle-left {*/
+    /*transition: all 1s 1s;*/
+/*}*/
+
+/*.screen-2__circle-left_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: rotate(0deg);*/
+/*}*/
+
+/*.screen-2__circle-left_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: rotate(144deg);*/
+/*}*/
+
+/*.screen-2__circle-right {*/
+    /*transition: all 1s 1s;*/
+/*}*/
+
+/*.screen-2__circle-right_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: rotate(0deg);*/
+/*}*/
+
+/*.screen-2__circle-right_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: rotate(180deg);*/
+/*}*/
+
+/*!*第二屏动画end*!*/
+/*!*第三屏动画start*!*/
+/*.screen-3__left, .screen-3__right {*/
+    /*transition: all 1s;*/
+/*}*/
+
+/*.screen-3__left_animate_init, .screen-3__right_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -200%);*/
+/*}*/
+
+/*.screen-3__left_animate_done, .screen-3__right_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*!*第三屏动画end*!*/
+
+/*!*第四屏动画start*!*/
+/*.screen-4__title {*/
+    /*transition: all 1s;*/
+/*}*/
+
+/*.screen-4__title_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -200%);*/
+/*}*/
+
+/*.screen-4__title_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*!*第四屏动画end*!*/
+/*!*第五屏动画start*!*/
+/*.screen-5__title {*/
+    /*transition: all 1s;*/
+/*}*/
+
+/*.screen-5__title_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, -200%);*/
+/*}*/
+
+/*.screen-5__title_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-5__post1 {*/
+    /*transition: all 2s;*/
+/*}*/
+
+/*.screen-5__post2 {*/
+    /*transition: all 2s 1s;*/
+/*}*/
+
+/*.screen-5__post3 {*/
+    /*transition: all 2s 1.5s;*/
+/*}*/
+
+/*.screen-5__post4 {*/
+    /*transition: all 2s 2s;*/
+/*}*/
+
+/*.screen-5__post5 {*/
+    /*transition: all 2s 2.5s;*/
+/*}*/
+
+/*.screen-5__post1_animate_init, .screen-5__post2_animate_init,*/
+/*.screen-5__post3_animate_init, .screen-5__post4_animate_init,*/
+/*.screen-5__post5_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(200%, 0);*/
+/*}*/
+
+/*.screen-5__post1_animate_done, .screen-5__post2_animate_done,*/
+/*.screen-5__post3_animate_done, .screen-5__post4_animate_done,*/
+/*.screen-5__post5_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*.screen-5__contact1 {*/
+    /*transition: all 1s 3s;*/
+/*}*/
+
+/*.screen-5__contact2 {*/
+    /*transition: all 1s 3.5s;*/
+/*}*/
+
+/*.screen-5__contact1_animate_init, .screen-5__contact2_animate_init {*/
+    /*opacity: 0;*/
+    /*transform: translate(0, 200%);*/
+/*}*/
+
+/*.screen-5__contact1_animate_done, .screen-5__contact2_animate_done {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+/*!*第五屏动画end*!*/
+
+/*!*导航条修饰样式*!*/
+/*.header {*/
+    /*transition: all 1s;*/
+/*}*/
+
+/*.header_status_black {*/
+    /*!*background-color: rgba(0, 0, 0, .5);*!*/
+    /*background-color: #666699;*/
+    /*opacity: .7;*/
+    /*filter: alpha(opacity=70);*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 3;*/
+/*}*/
+
+/*.header_status_black .header__logo,*/
+/*.header_status_black .header__nav-item {*/
+    /*color: #fff;*/
+/*}*/
+
+/*.header_status_black .header__nav-item_status_active {*/
+    /*color: #f05a76;*/
+/*}*/
+
+/*!*大纲修饰样式 _status_in *!*/
+/*.outline {*/
+    /*opacity: 0;*/
+    /*transition: all 1s;*/
+    /*transform: translate(100%, 0);*/
+/*}*/
+
+/*.outline_status_in {*/
+    /*opacity: 1;*/
+    /*transform: translate(0, 0);*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
