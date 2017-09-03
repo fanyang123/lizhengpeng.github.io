@@ -1,296 +1,243 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>理财宝 首页</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="scripts/vendor/OwlCarousel2-2.2.1/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="scripts/vendor/OwlCarousel2-2.2.1/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>web前端开发工程师</title>
+    <meta name="keywords" content="前端开发简历">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+    <link rel="stylesheet" href="libs/fullpage/css/jquery.fullPage.css">
+    <script src="libs/jquery/jquery-1.10.2.min.js"></script>
+    <script src="libs/fullpage/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="libs/fullpage/js/jquery.fullPage.min.js"></script>
 </head>
 <body>
-<!--[if lte IE 8]>
-<p class="browserupgrade">您的浏览器版本老的可笑，请到<a href="https://browsehappy.com/">这里</a>更新，
-    以获得最佳体验</p>
-<![endif]-->
 
-<header>
-    <nav class="top">
-        <span class="tel">理财热线: 400-888-8888</span>
-        <ul>
-            <li><a href="#">登录</a></li>
-            <li><a href="#">快速注册</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">帮助</a></li>
-            <li><a href="#">APP下载</a></li>
+<header class="header">
+    <div class="header__wrap">
+        <div class="header__logo">
+            <img src="./images/myself1.JPG" alt="个人简历"><span>个人简历</span>
+        </div>
+        <ul class="menu">
+            <li data-menuanchor="page1"><a href="#page1">首页</a></li>
+            <li data-menuanchor="page2" class="active"><a href="#page2">关于我</a></li>
+            <li data-menuanchor="page3"><a href="#page3">技能</a></li>
+            <li data-menuanchor="page4"><a href="#page4">工作经历</a></li>
+            <li data-menuanchor="page5"><a href="#page5">我的作品</a></li>
+            <li data-menuanchor="page6"><a href="#page6">联系我</a></li>
         </ul>
-    </nav>
-    <nav class="main">
-        <a href="#" class="brand"><img src="img/logo@1x.png" alt="回到首页"></a>
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">理财频道</a></li>
-            <li><a href="#">投资频道</a></li>
-            <li><a href="#">新手专区</a></li>
-            <li><a href="#">安全保障</a></li>
-        </ul>
-    </nav>
+    </div>
 </header>
+<!--<div id="audioBox">-->
+<!--<audio id="audio" autoplay loop src="music/Beyond-光辉岁月.mp3"></audio>-->
+<!--</div>-->
+<!--第一屏-->
+<div class="section section1">
+    <span></span>
+</div>
+<!--第二屏-->
+<div class="section section2">
+    <p>年龄/27</p>
+    <p>学历/专科</p>
+    <p>坐标/深圳</p>
+    <p>状态/离职</p>
+    <img src="./images/myself1.JPG" alt="头像">
+    <h1>李正朋</h1>
+    <h2><span>所谓天才</span> 只不过是把别人喝咖啡的功夫都用在工作上了</h2>
+</div>
+<!--第三屏-->
+<div class="section section3">
+    <div class="container">
+        <h2>MY SKILLS</h2>
+        <ul>
+            <li>
+                <div class="sk__css"></div>
+                <div>
+                    <h3>HTML5/CSS3</h3>
+                    <p>熟悉HTML5、CSS3响应式页面布局，以及编写动画</p>
+                </div>
+            </li>
+            <li>
+                <div class="sk__js"></div>
+                <div>
+                    <h3>javaScript/Ajax</h3>
+                    <p>可以使用js原生态代码编写网页业务逻辑，以及熟悉ajax原理，json等数据通信；了解前后端通信协议</p>
+                </div>
+            </li>
+            <li>
+                <div class="sk__jq"></div>
+                <div>
+                    <h3>jQuery</h3>
+                    <p>熟练使用jQuery实现页面业务逻辑</p>
+                </div>
+            </li>
+            <li>
+                <div class="sk__bt"></div>
+                <div>
+                    <h3>Bootstrap</h3>
+                    <p>熟悉并且能够使用Bootstrap进行响应式页面布局</p>
+                </div>
+            </li>
+            <li>
+                <div class="sk__vue"></div>
+                <div>
+                    <h3>Vue</h3>
+                    <p>学习并了解Vue开发框架</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--第四屏-->
+<div class="section section4">
+    <div class="timeline">
+        <div class="light"><i></i></div>
+        <hr class="line__left">
+        <hr class="line__right">
+        <div class="tl__main">
+            <h1 class="title">个人经历</h1>
+            <div class="year">
+                <h2><a href="#">2017年<i></i></a></h2>
+                <div class="t__list">
+                    <ul>
+                        <li class="cls highlight">
+                            <p class="date">至今</p>
+                            <p class="intro">深圳市凡微达实业有限公司</p>
+                            <p class="version">&nbsp;</p>
+                            <div class="more">
+                                <p>前端开发工程师</p>
+                                <p>运用Boostrap和HTML5、CSS3等技术进行页面的布局</p>
+                                <p>使用javaScript、jQuery实现页面动态效果和交互以及Ajax实现数据异步更新</p>
+                                <p>确保所开发web页面能支持指定的浏览器</p>
+                                <p>日常业务的更新和维护</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-<div class="container">
-    <!--交易信息-->
-    <div class="transaction clearfix">
-        <div class="trans-content">
-            <div class="trans-data">
-                <span>平台累计成交金额</span>
-                <span class="trans-money">200000</span>
-                <span>万元</span>
+            <div class="year">
+                <h2><a href="#">2016年<i></i></a></h2>
+                <div class="t__list">
+                    <ul>
+                        <li class="cls highlight">
+                            <p class="date">5月</p>
+                            <p class="intro">成为凡微达的一员</p>
+                            <p class="version">&nbsp;</p>
+                            <div class="more">
+                                <p>正式成为一个前端开发工程师</p>
+                                <p>心情很是激动，感慨自己的努力没有白费</p>
+                                <p>告诉自己努力不一定会成功，但不努力就肯定不会成功</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="trans-data">
-                <span>过去七天成交金额</span>
-                <span class="trans-money">180000</span>
-                <span>万元</span>
-            </div>
-            <div class="trans-report">
-                <a href="#">查看平台运营报告</a>
+
+        </div>
+    </div>
+</div>
+<!--第五屏-->
+<div class="section section5">
+    <h2>MY WORKS</h2>
+    <div class="slide">
+        <div class="container">
+            <a href="https://lizhengpeng.github.io/index" target="_blank" class="works works1"></a>
+            <div class="wk__description">
+                <h3>金融首页</h3>
+                <p>使用媒体查询功能，做出适配各种移动端和PC端的网页，兼容ie8以上以及Chrome、Firefox等各种流行浏览器</p>
+                <div class="wk__features">
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>无任何框架，考虑各浏览器间字体大小差异，使用合理的字体单位如rem、em</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>响应式布局，适配多种屏幕尺寸</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>媒体查询写样式便于管理</p>
+                    </div>
+                </div>
+                <p class="wk__more"><a href="https://lizhengpeng.github.io/index" target="_blank">了解更多...</a></p>
             </div>
         </div>
     </div>
-    <!--广告-->
-    <div class="ad">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad001-l.png" media="(min-width:50em)"/>
-                    <source srcset="img/ad001-m.png" media="(min-width:30em)"/>
-                    <img src="img/ad001.png" alt="新年红包">
-                </picture>
-            </div>
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad002-l.png" media="(min-width:50em)"/>
-                    <source srcset="img/ad002-m.png" media="(min-width:30em)"/>
-                    <img src="img/ad002.png" alt="新年红包">
-                </picture>
-            </div>
-            <div class="item">
-                <picture>
-                    <source srcset="img/ad003-l.png" media="(min-width:50em)"/>
-                    <source srcset="img/ad003-m.png" media="(min-width:30em)"/>
-                    <img src="img/ad003.png" alt="新年红包">
-                </picture>
+    <div class="slide">
+        <div class="container">
+            <a href="#" class="works works2"></a>
+            <div class="wk__description">
+                <h3>金融首页</h3>
+                <p>使用媒体查询功能，做出适配各种移动端和PC端的网页，兼容ie8以上以及Chrome、Firefox等各种流行浏览器</p>
+                <div class="wk__features">
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>无任何框架，考虑各浏览器间字体大小差异，使用合理的字体单位如rem、em</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>响应式布局，适配多种屏幕尺寸</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>媒体查询写样式便于管理</p>
+                    </div>
+                </div>
+                <p class="wk__more"><a href="https://lizhengpeng.github.io/index" target="_blank">了解更多...</a></p>
             </div>
         </div>
     </div>
-    <!--平台特点-->
-    <section class="feature">
-        <div class="item">
-            <h3>安全</h3>
-            <p>国家AAA信用平台<br>银行资金托管<br>上市公司背景保证</p>
+    <div class="slide">
+        <div class="container">
+            <a href="#" class="works works3"></a>
+            <div class="wk__description">
+                <h3>金融首页</h3>
+                <p>使用媒体查询功能，做出适配各种移动端和PC端的网页，兼容ie8以上以及Chrome、Firefox等各种流行浏览器</p>
+                <div class="wk__features">
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>无任何框架，考虑各浏览器间字体大小差异，使用合理的字体单位如rem、em</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>响应式布局，适配多种屏幕尺寸</p>
+                    </div>
+                    <div class="wk__feature">
+                        <span>&gt</span>
+                        <p>媒体查询写样式便于管理</p>
+                    </div>
+                </div>
+                <p class="wk__more"><a href="https://lizhengpeng.github.io/index" target="_blank">了解更多...</a></p>
+            </div>
         </div>
-        <div class="item">
-            <h3>权威</h3>
-            <p>中央电视台推荐<br>互联网百强企业<br>标准起草单位</p>
-        </div>
-        <div class="item">
-            <h3>省心</h3>
-            <p>100元起投<br>用户利益保障机制<br>保险公司承保</p>
-        </div>
-    </section>
-    <!--最新公告-->
-    <div class="notice clearfix">
-        <a href="#"><span>2017-08-31</span> 国庆期间业务受理及值班公告元旦期间业务受理及值班公告元旦期间业务
-            受理及值班公告元旦期间业务受理及值班公告元旦期间业务受理及值班公告元旦期间业务受理及...</a>
-        <a href="#" class="more">更多公告</a>
     </div>
-    <!--产品-->
-    <section class="product clearfix">
-        <h2>
-            固定期限产品
-            <em>甄选优质基金</em>
-            <em>省时省力</em>
-            <em>坐等收益</em>
-        </h2>
-        <div class="product-content">
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
+</div>
+<!--第六屏-->
+<div class="section section6">
+    <div class="contact">
+        <h2>CONTACT ME</h2>
+        <hr class="line__left">
+        <hr class="line__right">
+        <div class="tips">
+            如果您发现我正是您需要的前端开发工程师，那就赶快联系我吧！！！
         </div>
-    </section>
-
-    <section class="product clearfix">
-        <h2>
-            债权/散标产品
-            <em>甄选优质基金</em>
-            <em>省时省力</em>
-            <em>坐等收益</em>
-        </h2>
-        <div class="product-content">
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#" class="disabled">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#" class="disabled">购买</a>
-                </div>
-            </div>
-            <div class="item clearfix">
-                <h3><em>3</em>个月</h3>
-                <div class="info">
-                    <p>约定年华收益率：<span class="year-rate">3.5% <i>起</i></span></p>
-                    <p>总成交金额：<span class="year-rate">1880 <i>万元</i></span></p>
-                </div>
-                <div class="buy">
-                    <a href="#" class="disabled">购买</a>
-                </div>
-            </div>
+        <div class="con__way">
+            <p><span class="icon-mobile"></span>TEL: 138-2320-1809</p>
+            <p><span class="icon-wechat"></span>WeChat: lee_490764122</p>
+            <p><span class="icon-github"></span>GitHub: lizhengpeng</p>
         </div>
-    </section>
-
-    <nav class="information">
-        <div class="info-content clearfix">
-            <p class="brand"></p>
-            <ul>
-                <li class="title">关于我们</li>
-                <li><a href="#">公司介绍</a></li>
-                <li><a href="#">业务模式</a></li>
-                <li><a href="#">合作机构</a></li>
-                <li><a href="#">服务协议</a></li>
-            </ul>
-            <ul>
-                <li class="title">风险防范</li>
-                <li><a href="#">公司介绍</a></li>
-                <li><a href="#">业务模式</a></li>
-                <li><a href="#">合作机构</a></li>
-                <li><a href="#">服务协议</a></li>
-            </ul>
-            <ul>
-                <li class="title">理财产品</li>
-                <li><a href="#">公司介绍</a></li>
-                <li><a href="#">业务模式</a></li>
-                <li><a href="#">合作机构</a></li>
-                <li><a href="#">服务协议</a></li>
-            </ul>
-            <ul>
-                <li class="title">交易帮助</li>
-                <li><a href="#">公司介绍</a></li>
-                <li><a href="#">业务模式</a></li>
-                <li><a href="#">合作机构</a></li>
-                <li><a href="#">服务协议</a></li>
-            </ul>
-            <ul>
-                <li class="title">机构服务</li>
-                <li><a href="#">公司介绍</a></li>
-                <li><a href="#">业务模式</a></li>
-                <li><a href="#">合作机构</a></li>
-                <li><a href="#">服务协议</a></li>
-            </ul>
-        </div>
-    </nav>
+    </div>
 
 </div>
+<!--音乐播放器-->
+<div id="audioBox">
+    <audio id="audio" loop src="music/杨培安-我相信.mp3"></audio>
+</div>
 
-<footer>
-    <ul>
-        <li><span class="icon icon-zfywxk">支付业务许可证</span></li>
-        <li><span class="icon icon-pcirk">PCI认证</span></li>
-        <li><span class="icon icon-visayz">Visa 验证</span></li>
-        <li><span class="icon icon-vsjmfw">VerSign加密服务</span></li>
-        <li><span class="icon icon-wlgs">网络工商</span></li>
-        <li><span class="icon icon-rzcx">电子商务协会认证诚信网</span></li>
-        <li><span class="icon icon-gs">深圳工商</span></li>
-    </ul>
-    <p>深圳互联网金融公司 版权所有 ® 2016-2017 </p>
-</footer>
-<script src="scripts/vendor/jquery-1.10.2.min.js"></script>
-<script src="scripts/vendor/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
-<script src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+
 </body>
+
 </html>
-
-
-
-
