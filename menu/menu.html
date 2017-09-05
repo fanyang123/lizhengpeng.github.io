@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>菜谱查询</title>
+    <style>
+        .all {
+            margin-top: 30px;
+        }
+
+        .xh {
+            float: left;
+            margin-right: 20px;
+            color: red;
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        #menu {
+            width: 500px;
+        }
+    </style>
+    <script src="../libs/jquery/jquery-1.10.2.min.js"></script>
+    <script>
+        $(function () {
+            $("#btnSearch").click(function () {
+                var menu = $("#menu");
+                menu.text("正在加载...");
+                //获取文本框的值
+                var txt = $("#txtSearch").val();
+                //发送异步请求jsonp
+                $.ajax({
+                    type: "get",
+                    url: "http://apis.juhe.cn/cook/query?key=e5a33e9c5ebf678005a651f3fe8b2623&rn=3&pn=0&dtype=jsonp&menu=" + txt,
+                    dataType: "jsonp",
+                    success: function (data) {
+                        //清空容器
+                        menu.text("");
+                        //解析数据
+                        if (data.resultcode != 200) {
+                            menu.text("Sorry,没查到！！！");
+                            return;
+                        }
+                        for (var i = 0; i < data.result.data.length; i++) {
+                            //循环到每道菜
+                            var mydata = data.result.data[i];
+                            var all = $('<div class="all"></div>');
+                            menu.append(all);
+                            //标题
+                            var h2 = $('<h2>' + mydata.title + '</h2>');
+                            all.append(h2);
+                            //简介
+                            var p = $('<p class="intro">' + mydata.imtro + '</p>');
+                            all.append(p);
+                            //图片
+                            for (var j = 0; j < mydata.albums.length; j++) {
+                                //拿到图片
+                                var album = mydata.albums[j];
+                                var img = $('<img src="' + album + '">');
+                                all.append(img);
+                            }
+                            //主料
+                            var zl = $('<p class="zl">主料：' + mydata.ingredients + '</p>');
+                            all.append(zl);
+                            //辅料
+                            var fl = $('<p class="fl">辅料：' + mydata.burden + '</p>');
+                            all.append(fl);
+                            //步骤
+                            var steps = $('<div class="steps"></div>');
+                            all.append(steps);
+                            //
+                            for (var k = 0; k < mydata.steps.length; k++) {
+                                var step = mydata.steps[k];
+                                var c = $('<div class="c"></div>');
+                                steps.append(c);
+                                //步骤
+                                var p1 = $('<p>' + step.step + '</p>');
+                                c.append(p1);
+                                //步骤图片
+                                var p2 = $('<p><img src="' + step.img + '"></p>');
+                                c.append(p2);
+                            }
+                            menu.append("<hr>");
+                        }
+
+                    },
+                    error: function () {
+                        menu.text("错误");
+                    }
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+<input type="text" placeholder="请输入一道您想做的菜名" id="txtSearch"><input type="button" value="搜索" id="btnSearch">
+<div id="menu">
+
+</div>
+
+</body>
+
+</html>
